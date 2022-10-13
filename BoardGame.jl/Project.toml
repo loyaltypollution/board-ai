@@ -1,0 +1,4 @@
+name = "BoardGame"
+uuid = "773b45e0-e939-4ee9-b92e-64298cf16558"
+authors = ["loyaltypollution <darrenlim.code@gmail.com>"]
+version = "0.1.0"
