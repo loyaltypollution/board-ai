@@ -13,5 +13,6 @@ struct SimpleBoard{S, M, N} <: AbstractBoard
     end
 end
 
-Base.fill!(board::SimpleBoard, x::S) = fill!(board.board, x)
-Base.setindex!(board::SimpleBoard, X::S, inds::CartesianIndex) = setindex!(board.board, X, inds)
+Base.fill!(board::SimpleBoard{S}, x::S) where S = fill!(board.board, x)
+Base.setindex!(board::SimpleBoard{S}, X::S, inds::CartesianIndex) where S = setindex!(board.board, X, inds)
+
