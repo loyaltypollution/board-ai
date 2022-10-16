@@ -8,6 +8,6 @@ include("HumanPlayer.jl")
 include("SimpleBoards.jl")
 include("SimpleTurns.jl")
 
-include("TicTacToe.jl")
+include("TicTacToe/TicTacToe.jl")
 
 end
