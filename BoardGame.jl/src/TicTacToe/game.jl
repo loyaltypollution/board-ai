@@ -2,11 +2,15 @@ function moves(game::TicTacToe{S}) where S
     board = game.board
     blank = empty(TicTacToe{S})
     findall(isequal(blank), board)
+
+    ## should return TicTacToe type
 end
 
 function move(game::TicTacToe{S}, move::CartesianIndex{2}) where S
     board, turn = game.board, game.turn
     board[move] = player2cell(TicTacToe{S}, who_ind(turn))
+
+    ## should return TicTacToe type
 end
 
 function play(game::TicTacToe)
